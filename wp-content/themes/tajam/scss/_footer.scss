@@ -1,0 +1,76 @@
+footer{
+    width: 100%;
+}
+.contacts{
+    &__container{
+      width: 100%;
+      max-width: 1090px;
+      margin: auto;
+      padding: 50px 10px;
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: 1024px){
+        flex-direction: column;
+      }
+      h3{
+        font-size: 32px;
+        color: #413d4b;
+        font-family: serif;
+        @media screen and (max-width: 1024px){
+            text-align: center;
+          }
+      }
+    }
+    &__wpapper{
+      width: 48%;
+      @media screen and (max-width: 1024px){
+        width: 100%;
+      }
+    }
+    &__form{
+      width: 100%;
+      display: block;
+      padding: 10px;
+      margin: 20px 0;
+      border: 1px solid #c7c6c9;
+      &[placeholder], &[value]{
+        font-family: serif;
+        color: #c7c6c9;
+      }
+      &_submit{
+        max-width: 100px;
+        background: transparent;
+        &[value]{
+          color: $menuHoverColor;
+          font-weight: bold;
+        }
+      }
+      &_massage{
+        height: 200px;
+      }
+    }
+  }
+  .clients{
+    &__wrapper{
+      width: 48%;
+      @media screen and (max-width: 1024px){
+        width: 100%;
+      }
+    }
+    max-height: 430px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    @media screen and (max-width: 1024px){
+        align-content: space-around;
+      }
+    @media screen and (max-width: 400px){
+        max-height: none;
+    }
+  }
+  .client{
+    display: block;
+    height: 15%;
+    margin: 3% 0;
+  }

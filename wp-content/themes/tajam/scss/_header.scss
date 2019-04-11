@@ -1,0 +1,144 @@
+h1{
+  color: $textColorLight;
+  text-transform: capitalize;
+  font-weight: normal;
+  font-family: serif;
+  display: block;
+  text-align: center;
+}
+.site-header{
+  width: 100%;
+  z-index: 2;
+}
+.header__bg {
+  height: auto;
+  width: 100%;
+  max-width: 1090px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  .logo {
+    position: relative;
+    margin: 10px;
+    z-index: 1;
+    display: block;
+    height: auto;
+    @media screen and (max-width: 1024px) {
+      text-align: center;
+      margin: 0;
+      padding-top: 20px;
+    }
+    img {
+      width: 200px;
+    }
+  }
+}
+.top-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 1024px){
+    display: block;
+  }
+}
+.main_nav {
+  padding: 0;
+  text-align: center;
+  margin-top: 0;
+  height: auto;
+  margin-bottom: 0;
+  overflow: hidden;
+  border-color: transparent;
+  padding: 0;
+  @media screen and (max-width: 1024px) {
+    display: none;
+    background: #000000;
+  }
+  li {
+    display: inline-block;
+    position: relative;
+    border: 0;
+    border-radius: 3px;
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+      display: block;
+    }
+    .nav-item-link__active{
+      color: $menuHoverColor;
+    }
+    a, span {
+      font-size: 16px;
+      color: $headingColor;
+      text-transform: uppercase;
+      padding: 9px;
+      font-family: Bebasneue, sans-serif;
+      letter-spacing: 1px;
+      display: block;
+      height: 100%;
+      width: 100%;
+      &:hover {
+        color: $menuHoverColor;
+      }
+    }
+  }
+
+  &.single-nav {
+    li:hover {
+      background: transparent;
+    }
+    a {
+      color: $headingColor;
+      font-size: 16px;
+      transition: color 0.15s ease;
+      &:hover {
+        color: $menuHover;
+      }
+    }
+  }
+}
+.nav-toggle{
+  display: none;
+  position: absolute;
+  right: 2%;
+  top: 30px;
+  z-index: 2;
+  @media screen and (max-width: 1024px){
+    display: block;
+  }
+}
+.burger{
+  display: block;
+  width: 34px;
+  height: 6px;
+  margin: 4px 0;
+  border-radius: 5px;
+  background: $burger;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.divider{
+  display: block;
+  width: 50px;
+  margin: 20px auto;
+  background-color: $menuHoverColor;
+}
+.head__text{
+  display: block;
+  padding: 10px;
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+  color: $textColorLight;
+  font-family: serif;
+}
+.head__content{
+  margin-top: 60px;
+  @media screen and (max-width: 1090px){
+    margin-top: 0;
+  }
+  @media screen and (max-width: 767px){
+    display: none;
+  }
+}

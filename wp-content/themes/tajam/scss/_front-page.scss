@@ -1,0 +1,113 @@
+.front-page,
+.category-page {
+  height: auto;
+  overflow: hidden;
+  padding: 15px;
+  width: 100%;
+  max-width: 1090px;
+  margin: auto;
+  text-align: center;
+  .for-h {
+    position: relative;
+    font-size: 16px;
+    margin: 0 0 20px;
+    padding: 10px;
+    display: inline-block;
+  }
+  .main-text {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+}
+.front{
+  &__text-wrapper{
+    width: 100%;
+    background-color: #c2c2c2;
+  }
+}
+.story-wrapper{
+  width: 100%;
+  max-width: 1090px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 10px;
+  @media screen and (max-width: 500px){
+    flex-direction: column;
+  }
+}
+.story__img{
+  height: 230px;
+  margin-right: 20%;
+  @media screen and (max-width: 500px){
+    width: 50%;
+    height: auto;
+    margin: auto;
+  }
+}
+.testimonials-container{
+  width: 100%;
+  background: url(./images/bg/testimonials-bg.png) center center no-repeat;
+  background-size: cover;
+}
+.testimonials-wrapper{
+  widows: 100%;
+  max-width: 780px;
+  padding: 10px;
+  margin: auto;
+  color: $textColorLight;
+  font-family: serif;
+}
+.quots{
+  font-size: 70px;
+  text-align: center;
+  height: 55px;
+}
+.testimonial{
+  text-align: center;
+  margin: 50px 0;
+}
+.person{
+  &__name{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  &__position{
+    text-align: center;
+    font-size: 12px;
+    margin: 5px 0 50px 0;
+  }
+}
+.avatar{
+  &__slider{
+    max-width: 300px;
+    margin: 50px auto;
+    @media screen and (max-width: 350px){
+      max-width: 270px;
+    }
+    .slick-current img{
+      transform: scale(1.5);
+      transition: .5s;
+    }
+    .slick-slide img{
+      width: auto;
+    }
+    .slick-prev:before{
+      content: '<';
+      font-family: monospace;
+      font-size: 30px;
+      color: #adabab;
+    }
+    .slick-next:before{
+      content: '>';
+      font-family: monospace;
+      font-size: 30px;
+      color: #adabab;
+    }
+  }
+  &__slide{
+    padding: 10px 0;
+  }
+}
+

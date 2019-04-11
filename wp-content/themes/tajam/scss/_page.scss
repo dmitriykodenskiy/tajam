@@ -1,0 +1,21 @@
+.page {
+    height: auto;
+    overflow: hidden;
+    padding: 15px;
+    width: 100%;
+    max-width: 1090px;
+    margin: auto;
+    text-align: center;
+    .for-h {
+        position: relative;
+        font-size: 16px;
+        margin: 0 0 20px;
+        color: $h1Color;
+        padding: 10px;
+        display: inline-block;
+    } 
+    .main-text {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+}

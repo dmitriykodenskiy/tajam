@@ -1,0 +1,20 @@
+# ignore various IDE project files and folders
+.idea
+.idea/
+.buildpath
+.project
+.settings/
+nbproject/
+node_modules
+yarn.lock
+package-lock.json
+docker
+logs
+.env
+docker-compose.yml
+# ignore php and txt files beginning with test in root directory
+/test*.php
+/test*.txt
+
+# ignore mac files
+.DS_Store
