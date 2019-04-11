@@ -39,10 +39,10 @@
                 <div class="top-wrapper">
                     <div class="logo">
                         <?php if ( is_front_page() || is_home() ) { ?>
-                            <img src="<?php bloginfo("template_url"); ?>/images/logo.png" alt="parimatch">
+                            <img src="<?php bloginfo("template_url"); ?>/images/logo.png" alt="">
                         <?php  } else { ?>
-                            <a href="/" class="logo_img" title="parimatch">
-                                <img src="<?php bloginfo("template_url"); ?>/images/logo.png" alt="parimatch">
+                            <a href="/" class="logo_img" >
+                                <img src="<?php bloginfo("template_url"); ?>/images/logo.png" alt="">
                             </a>
                         <?php } ?> 
                     </div>   
